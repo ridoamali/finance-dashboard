@@ -3,9 +3,9 @@ import React from 'react';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const data = [
-  { name: 'Jan', Income: 4000, Expense: 2400 },
+  { name: 'Jan', Income: 4000, Expense: 8400 },
   { name: 'Feb', Income: 3000, Expense: 1398 },
-  { name: 'Mar', Income: 2000, Expense: 9800 },
+  { name: 'Mar', Income: 2000, Expense: 5000 },
   { name: 'Apr', Income: 2780, Expense: 3908 },
   { name: 'May', Income: 1890, Expense: 4800 },
   { name: 'Jun', Income: 2390, Expense: 3800 },
@@ -13,7 +13,7 @@ const data = [
 
 const CustomBarChart: React.FC = () => {
   return (
-    <ResponsiveContainer width="100%" height={400}>
+    <ResponsiveContainer width="100%" height={200}>
       <BarChart
         data={data}
         margin={{
@@ -23,7 +23,7 @@ const CustomBarChart: React.FC = () => {
           bottom: 5,
         }}
       >
-        <CartesianGrid strokeDasharray="3 3" />
+        <CartesianGrid strokeDasharray="1 3" />
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
