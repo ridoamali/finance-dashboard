@@ -5,24 +5,24 @@ const Overview = () => {
   return (
     <>
                 {/* Manage WIdget */}
-            <div className="flex items-center space-x-4 mb-8 justify-between">
+            <div className="flex items-center space-x-4 mb-8 justify-between text-xs sm:text-[16px]">
                 <div className="space-x-2 flex">
-                <div className="space-x-2 border rounded-full px-4 py-2  border-zinc-300">
-                    <CalendarDays className='inline-block' />
+                <div className="space-x-2 border rounded-2xl px-4 py-2  border-zinc-300">
+                    <CalendarDays className='inline-block sm:size-6 size-4' />
                 </div>
-                <select className="space-x-2 border rounded-full px-4 py-2 border-zinc-300">
+                <select className="space-x-2 border rounded-2xl px-4 py-2 border-zinc-300">
                    <option value="">This Month</option>
                 </select>
                 </div>
-                <div className="justify-end space-x-2">
-                <button className="border rounded-full px-4 py-2 border-zinc-300">
-                    <LayoutGrid className='inline-block font-bold' />
+                <div className="flex justify-end space-x-2">
+                <div className="border rounded-2xl px-4 py-2 border-zinc-300 sm:text-[16px] text-[12px]">
+                    <LayoutGrid className='inline-flex font-bold sm:size-6 size-4' />
                     Manage widgets
-                    </button>
-                <button className="bg-purple-500 text-white rounded-full px-4 py-2">
-                    <Plus className='inline-block' />
+                    </div>
+                <div className="bg-purple-500 text-white rounded-2xl px-4 py-2">
+                    <Plus className='inline-flex sm:size-6 size-4' />
                     Add new widget
-                </button>
+                </div>
                 </div>
             </div>
             {/* END Manage WIdget */}
